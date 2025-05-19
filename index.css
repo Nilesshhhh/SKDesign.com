@@ -1,0 +1,91 @@
+.cards-section {
+  max-width: 960px;
+  margin: 3rem auto 5rem;
+  padding: 0 1rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: #222;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+  border-top: 3px solid #ff6f61;
+}
+
+.footer-content p {
+  margin: 0.3rem 0;
+}
+
+.social-links a {
+  color: #ff6f61;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  font-weight: 700;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+body {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/3/38/India_topographic_map.png') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.5;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Overlay to soften background for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.85); /* white with opacity */
+  pointer-events: none;
+  z-index: -1;
+}
